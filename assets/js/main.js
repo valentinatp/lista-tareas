@@ -61,15 +61,3 @@ var res =
     "completed": true
   }
 ]
-
-res.forEach(function(elemento){
-	lista.innerHTML += "<li>" + elemento.title + "</li>";
-})
-
-function anadirTarea(){
-	var valorInput = document.getElementById("tarea").value;
-	var conTarea = document.getElementsByClassName("añadir-tarea");
-	conTarea[0].innerHTML += "<li>" + valorInput + "</li>";
-}
-
-
