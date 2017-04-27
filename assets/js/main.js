@@ -62,6 +62,11 @@ var res =
   }
 ]
 
+res.forEach(function(elemento){
+  lista.innerHTML += "<li>" + elemento.title + "</li>";
+})
+
+
 function anadirTarea(){
   var valorInput = document.getElementById("tarea").value;
   var conTarea = document.getElementsByClassName("añadir-tarea");
