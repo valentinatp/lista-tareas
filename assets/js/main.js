@@ -66,9 +66,17 @@ res.forEach(function(elemento){
   lista.innerHTML += "<li>" + elemento.title + "</li>";
 })
 
-
 function anadirTarea(){
   var valorInput = document.getElementById("tarea").value;
   var conTarea = document.getElementsByClassName("añadir-tarea");
   conTarea[0].innerHTML += "<li>" + valorInput + "</li>";
+
+function NuevoObjeto(valorInput){
+    this.userId = 1;
+    this.id = res.length;
+    this.title = valorInput;
+    this.completed = false;   
+  }
+  var obj = new NuevoObjeto(valorInput);
+  return res.push(obj);
 }
