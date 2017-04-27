@@ -68,8 +68,8 @@ res.forEach(function(elemento){
 
 function anadirTarea(){
   var valorInput = document.getElementById("tarea").value;
-  var conTarea = document.getElementsByClassName("añadir-tarea");
-  conTarea[0].innerHTML += "<li>" + valorInput + "</li>";
+  var tareax = document.getElementsByClassName("añadir-tarea");
+  tareax[0].innerHTML += "<li>" + valorInput + "</li>";
 
 function NuevoObjeto(valorInput){
     this.userId = 1;
